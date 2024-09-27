@@ -1,0 +1,258 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    max-width: 980px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+}
+
+/* mobile **************************/
+
+
+.yellowpart {
+    color: yellow;
+}
+
+
+/* Header */
+header {
+    background-color: #0d2c70d8;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.headcont {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre horizontalement */
+    text-align: center;
+    flex-direction: row; /* Aligne les éléments sur la même ligne */
+}
+
+.headcont h1 {
+    font-weight: bold;
+}
+
+.profile-gl {
+    max-width: 150px; /* Ajuste la taille de l'image */
+    height: auto; /* Garde les proportions de l'image */
+    border-radius: 20%;
+    margin-right: 10px; /* Ajoute un espacement entre l'image et le nom */
+    padding: 15px;
+}
+
+
+/* Main Parts / Content Style */
+main {
+    display: grid;
+    grid-template-columns: 2.6fr 1.4fr;
+     gap: 10px;   /*Space between two section */
+    margin: 20px;
+}
+
+/* Main */
+main {
+	margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+	font-weight: 100;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+nav {
+	background-color: #000000;
+	margin: 0 auto;
+	/* max-width: 800px; */
+}
+nav ul {
+	list-style-type: none;
+    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime la marge par défaut */
+    text-align: center; /* Centre le texte de la navigation */
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration:overline;
+    color: yellow;
+}
+
+/* Responsive Navigation */
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+
+
+/* Responsive Navigation */
+/* nav ul {
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+} */
+
+
+
+.card, .card3 {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #d3d2d2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card3 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.seccont {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+}
+
+.tytry {
+    width: 230px;
+    height: auto;
+    padding: 15px;
+}
+
+.tytry img {
+    display: block;
+    margin: 0 auto;
+    margin: center;
+}
+
+.tytry figcaption {
+    margin-top: 10px;
+    /* font-style: italic; */
+    color: #555;
+    text-align: center;
+}
+
+
+section h2 {
+    font-size: 1.2rem;
+    background-color:#0d2c70d8;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+section hr {
+    border: none;
+    width:80%;
+    height: 1.3px;
+    background-color: #0d2c70d8;
+    margin: 10px 60px;
+    margin-top: 5px;
+}
+
+section p {
+    padding: 20px;
+    margin: 10px;
+    color: #061a46;
+}
+
+section ul {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+
+section a {
+    color: #061a46;
+	padding: 0.5rem;
+	text-decoration: none;
+}
+
+
+.course {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.course.completed {
+    background-color: #e0ffe0;
+    border-color: #00cc00;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 10%;
+}
+
+/* .course-completed {
+    background-color: red;
+    color: white;
+}
+
+.course-incomplete {
+    background-color: gray;
+    color: white;
+}
+
+.course-filter {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.course-card {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+} */
+
+
+
+/* Footer Parts */
+footer {
+    background-color: #0d2c70d8;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+
+

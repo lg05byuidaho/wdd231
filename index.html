@@ -3,10 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231: Web Frontend Development I - Guelson Laguerre</title>
+    <meta name="description" content="WDD 231 Web Frontend Development I - Guelson Laguerre">
+    <meta name="author" content="Guelson Laguerre">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="js/home.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    Hello Everyone
-    I am GL
+    <header>
+        <div class="headcont">
+            <img class="profile-gl" src="images/profile.jpg" alt="Hello, my name is Guelson Laguerre" width="95">
+            <h1>Guelson Laguerre</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/guelson-laguerre-b1a966225/">Chamber</a></li>
+                <li><a href="https://www.linkedin.com/in/guelson-laguerre-b1a966225/">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/guelson-laguerre-b1a966225/">LinkedIn</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Course Work</h2>
+            <ul>
+                <li><a href="https://validator.w3.org/"></a></li>
+                <li><a href="https://www.w3schools.com/js/"></a></li>
+                <li><a href="https://www.jshero.net/"></a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Cap-Haitien, Haiti</h2>
+            <div class="seccont">
+                <figure class="tytry">
+                    <img class="tytryr" src="images/citadelle.jpg" alt="This is the Milo's Citadelle" width="200">
+                    <figcaption>Citadelle Laferiere</figcaption>
+                </figure> 
+            </div>
+        </section>
+
+        <!-- <section class="card3">
+            <h2>Web and Computer Programming Certificate</h2>
+            <p>Total Credits: <span id="total-credits"></span></p>
+            <div class="course-filter">
+                <button id="show-all">All</button>
+                <button id="show-cse">CSE</button>
+                <button id="show-wdd">WDD</button>
+            </div>
+            <div id="course-list"></div>
+        </section> -->
+        <section class="card3">
+            <h2>Web and Computer Programming Certificate</h2>
+            <button id="filterAll">All</button>
+            <button id="filterCSE">CSE</button>
+            <button id="filterWDD">WDD</button>
+            <div id="courseContainer"></div>
+            <p id="totalCredits"></p>
+        </section>
+        <!-- <section class="card3">
+            <h2>Web and Computer Programming Certificate</h2>
+            <p>Total Credits: <span id="total-credits"></span></p>
+        </section>     -->
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ⚽ Guelson Laguerre ⚽ Haiti</p>
+        <!-- <p id=" <span class="highlight"></p> lastModified"></p> -->
+        <p id="lastModified" class="yellowpart"></p>
+    </footer>
 </body>
 </html>
