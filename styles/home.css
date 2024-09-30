@@ -52,6 +52,7 @@ header {
 
 /* Main Parts / Content Style */
 main {
+    background-color: #fff;
     display: grid;
     grid-template-columns: 2.6fr 1.4fr;
      gap: 10px;   /*Space between two section */
@@ -124,7 +125,7 @@ nav a:hover {
 .card, .card3 {
     background-color: #fff;
     border-radius: 10px;
-    border: 2px solid #d3d2d2;
+    border: 1px solid #d3d2d2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -198,14 +199,20 @@ section a {
 
 
 .course {
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
+    border: #d3d2d2;
     padding: 1em;
     margin: 1em 0;
+    border-radius: 5%;
 }
 
 .course.completed {
-    background-color: #e0ffe0;
-    border-color: #00cc00;
+    color: #fff;
+    background-color: #581d1d;
+    /* border-color: #00cc00; */
+    /* border-color: #ccc; */
+    border-color: #d3d2d2;
+    border-radius: 5%;
 }
 
 button {
@@ -241,12 +248,41 @@ button {
 } */
 
 
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    gap: 5px; /* Space between buttons */
+    margin-top: 20px;
+    padding: 5px;
+    border: 3px solid #ccc;
+}
+
+.course-button {
+    /* background-color: #000000; */
+    background-color: #bfd1d9;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.course-button:hover {
+    background-color: #0d2c70d8; /* Change color on hover */
+}
+
+#courseContainer {
+    border: 1px solid #ccc;
+}
 
 /* Footer Parts */
 footer {
     background-color: #0d2c70d8;
     color: #fff;
     padding: 20px 0;
+    margin-top: 10px;
     text-align: center;
 }
 

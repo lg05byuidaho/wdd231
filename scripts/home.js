@@ -64,23 +64,75 @@ const courses = [
 // Display courses dynamically
 const courseContainer = document.getElementById('courseContainer');
 
+// function displayCourses(filter = '') {
+//     courseContainer.innerHTML = '';
+//     courses
+//         .filter(course => !filter || course.subject === filter)
+//         .forEach(course => {
+//             const courseCard = document.createElement('div');
+//             courseCard.className = course.completed ? 'course completed' : 'course';
+//             courseCard.innerHTML = `
+//                 <h3>${course.title}</h3>
+//                 <p>Code: ${course.subject} ${course.number}</p>
+//                 <p>Credits: ${course.credits}</p>
+//                 <p>${course.description}</p>
+//                 <p>Technologies: ${course.technology.join(', ')}</p>
+//             `;
+//             courseContainer.appendChild(courseCard);
+//         });
+// }
+
+
+
+
 function displayCourses(filter = '') {
     courseContainer.innerHTML = '';
     courses
         .filter(course => !filter || course.subject === filter)
         .forEach(course => {
-            const courseCard = document.createElement('div');
-            courseCard.className = course.completed ? 'course completed' : 'course';
-            courseCard.innerHTML = `
-                <h3>${course.title}</h3>
-                <p>Code: ${course.subject} ${course.number}</p>
-                <p>Credits: ${course.credits}</p>
-                <p>${course.description}</p>
-                <p>Technologies: ${course.technology.join(', ')}</p>
-            `;
-            courseContainer.appendChild(courseCard);
+            const courseButton = document.createElement('button');
+            courseButton.className = 'course-button';
+            courseButton.textContent = `${course.subject} ${course.number}`; // Display subject and number
+            
+            // Set background color based on completion status
+            courseButton.style.backgroundColor = course.completed ? '#581d1d' : '#e6eef2';
+            courseButton.style.color = course.completed ? 'white' : 'black';
+            courseButton.style.fontWeight = 'bold'; // Set font weight to bold
+            courseButton.onclick = () => {
+                // Optional: Add functionality when the button is clicked
+                alert(`${course.subject} ${course.number}: ${course.description}`);
+            };
+            courseContainer.appendChild(courseButton);
         });
 }
+
+// Initial display of all courses
+displayCourses();
+
+
+// function displayCourses(filter = '') {
+//     courseContainer.innerHTML = '';
+//     courses
+//         .filter(course => !filter || course.subject === filter)
+//         .forEach(course => {
+//             const courseButton = document.createElement('button');
+//             courseButton.className = course.completed ? 'course completed' : 'course';
+//             // 'course-button';
+//             // courseButton.textContent = course.title;
+//             courseButton.textContent = `${course.subject} ${course.number}`;
+//             courseButton.onclick = () => {
+//                 // Optional: Add functionality when the button is clicked
+//                 alert(`${course.title}: ${course.description}`);
+//             };
+//             courseContainer.appendChild(courseButton);
+//         });
+// }
+
+// // Initial display of all courses
+// displayCourses();
+
+
+
 
 // Initial display of all courses
 displayCourses();
