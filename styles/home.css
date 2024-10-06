@@ -96,6 +96,12 @@ nav a:hover {
     color: yellow;
 }
 
+nav a.active {
+    background-color: white; /* Highlight color for active link */
+    color: black; /* Text color for active link */
+}
+
+
 /* Responsive Navigation */
 
 /* Larger Views ******************************/
