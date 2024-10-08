@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Cadeau Chic",
+        "address": "Gragra Moura III, Jeremie, GA",
+        "phone": "(509) 4123-4567",
+        "website": "https://cadeauchic.com",
+        "image": "images/logo-cadeauchic.jpg",
+        "membership_level": 2,
+        "description": "Trendy boutique offering unique clothing and accessories."
+    },
+    {
+        "name": "Sommet Bar And Grill",
+        "address": "56 Caracolie, Jeremie, GA",
+        "phone": "509) 2234-5678",
+        "website": "https://sommetbarandgrill.com",
+        "image": "images/logo-sommet.jpg",
+        "membership_level": 3,
+        "description": "Fine dining deli with fresh, local ingredients."
+    },
+    {
+        "name": "Tech Hub",
+        "address": "78 Boirond Tonnerre, Jeremie, GA",
+        "phone": "(509) 3345-6789",
+        "website": "https://techhub.com",
+        "image": "images/logo-techhub.jpg",
+        "membership_level": 1,
+        "description": "Co-working space for tech startups and freelancers."
+    },
+    {
+        "name": "Ardouin Bakery",
+        "address": "321 Bread Rd, Jeremie, GA",
+        "phone": "(509) 3456-7890",
+        "website": "https://ardrouinbakery.com",
+        "image": "images/logo-ardrouinbakery.jpg",
+        "membership_level": 2,
+        "description": "Freshly baked goods daily, from bread to pastries."
+    },
+    {
+        "name": "Ronne Studio",
+        "address": "16 Caracolie II, Jeremie, GA",
+        "phone": "(509) 3144-8226",
+        "website": "https://ronnestudio.com",
+        "image": "images/logo-ronnestudio.jpg",
+        "membership_level": 3,
+        "description": "Community-focused fitness classes and training."
+    },
+    {
+        "name": "Artisan Crafts",
+        "address": "187 Jn Leopold Dominique, Jeremie, GA",
+        "phone": "(509) 3805-",
+        "website": "https://artisancrafts.com",
+        "image": "images/logo-artisancrafts.jpg",
+        "membership_level": 1,
+        "description": "Local crafts and handmade goods."
+    },
+    {
+        "name": "Reference Store",
+        "address": "159 Eugene MArgron, Jeremie, GA",
+        "phone": "(509) 3789-0123",
+        "website": "https://referencestore.com",
+        "image": "images/logo-referencestore.jpg",
+        "membership_level": 2,
+        "description": "Sustainable products for a greener lifestyle."
+    }
+]

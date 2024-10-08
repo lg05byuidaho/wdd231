@@ -1,0 +1,175 @@
+/* Normalize CSS */
+@import url('normalize.css');
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4; /* Background Color */
+    color: #333333; /* Text Color */
+}
+
+
+/* HEADER PARTS */
+header {
+    display: flex;
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Aligner verticalement */
+    padding: 20px; /* Espacement autour de l'en-tête */
+    background-color: #f8f8f8; /* Couleur de fond de l'en-tête */
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center; /* Aligner logo et titre verticalement */
+}
+
+#logo {
+    max-width: 100px; /* Ajustez la taille du logo */
+    margin-right: 15px; /* Espacement entre le logo et le titre */
+}
+
+nav {
+    margin-left: auto; /* Pousse le nav à droite */
+}
+
+nav ul {
+    list-style: none; /* Supprime les puces de la liste */
+    display: flex; /* Affiche les éléments de la liste en ligne */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+nav ul li {
+    margin-left: 20px; /* Espacement entre les éléments du menu */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #333; /* Couleur du texte */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Couleur au survol */
+}
+/* -------------------------------- */
+
+/* ------------------------------- */
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #003366; /* Primary Color */
+}
+
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px; /* Adjust for your design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* FOOTER PARTS */
+
+footer {
+    background-color: #0d2c70d8;
+    color: #fff;
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Pour permettre le passage à la ligne si l'espace est limité */
+}
+
+.left {
+    flex: 1;
+    text-align: left;
+}
+
+.center {
+    flex: 1;
+    text-align: center;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+nav.sociallinks {
+    display: flex;
+    justify-content: center; /* Centrer les icônes */
+}
+
+nav.sociallinks a {
+    margin: 0 10px; /* Espacement entre les icônes */
+}
+
+nav.sociallinks img {
+    width: 50px; /* Ajustez la taille des icônes */
+    height: 50px; /* Ajustez la taille des icônes */
+}
+/* ---------------------------------------- */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .member-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-card {
+        width: 90%; /* Full width on small screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .member-card {
+        width: calc(33% - 20px); /* 3 cards per row */
+    }
+}
+
+
+
+.member-list.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member-list.list-view {
+    display: block;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

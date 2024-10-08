@@ -1,0 +1,297 @@
+/* Normalize CSS */
+@import url('normalize.css');
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4; /* Background Color */
+    color: #333333; /* Text Color */
+}
+
+
+/* HEADER PARTS */
+header {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Vertically align */
+    padding: 20px; /* Spacing around the header */
+    background-color: #0d2c70d8; /* Background color of the header */
+    color: #fff;
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: flex-start; /* Align logo and title at the top */
+}
+
+#logo {
+    max-width: 120px; /* Adjust the size of the logo */
+    margin-right: 15px; /* Spacing between the logo and the title */
+}
+
+.logo-and-title h1 {
+    margin: 0; /* Remove default margin from h1 */
+}
+
+.logo-and-title h3 {
+    margin: 0; /* Remove default margin from h3 */
+    margin-top: 5px; /* Adjust this value for the space between h1 and h3 */
+}
+
+nav {
+    margin-left: auto; /* Push the nav to the right */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    display: flex; /* Display list items in a row */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin-left: 20px; /* Spacing between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color */
+    font-weight: bold; /* Make text bold */
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: overline; /* Underline on hover */
+    color: yellow; /* Color on hover */
+}
+
+
+/* -------------------------------- */
+
+
+
+/* ------------------------------- */
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #003366; /* Primary Color */
+}
+
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px; /* Adjust for your design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* FOOTER PARTS */
+
+/* footer {
+    background-color: #003366; Primary Color
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+} */
+
+
+footer {
+    background-color: #0d2c70d8;
+    color: #fff;
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Pour permettre le passage à la ligne si l'espace est limité */
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.left {
+    flex: 1;
+    text-align: left;
+    margin: 0; /* Remove default margin from h3 */
+}
+
+.center {
+    flex: 1;
+    text-align: center;
+    margin: 0; /* Remove default margin from h3 */
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+    margin: 0; /* Remove default margin from h3 */
+}
+
+nav.sociallinks {
+    display: flex;
+    justify-content: center; /* Centrer les icônes */
+}
+
+nav.sociallinks a {
+    margin: 0 5px; /* Espacement entre les icônes */
+}
+
+nav.sociallinks img {
+    width: 50px; /* Ajustez la taille des icônes */
+    height: 50px; /* Ajustez la taille des icônes */
+}
+/* ---------------------------------------- */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .member-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-card {
+        width: 90%; /* Full width on small screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .member-card {
+        width: calc(33% - 20px); /* 3 cards per row */
+    }
+}
+
+
+
+.member-list.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member-list.list-view {
+    display: block;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+/* HOME PAGE PARTS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+}
+
+.responsive-hero {
+    width: 100%;
+    height: auto;
+}
+
+.cta-ticket {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.events, .current-weather, .weather-forecast {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.section-title {
+    background-color: #f1c40f; /* Couleur de fond pour les titres */
+    padding: 10px;
+    margin: -10px -10px 10px; /* Ajuste l'espacement */
+}
+
+.business-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.spotlight {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(30% - 20px);
+}
+
+.card-separator {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .info-sections {
+        flex-direction: column;
+    }
+    .events, .current-weather, .weather-forecast {
+        width: 100%; /* Stack on mobile */
+    }
+    .business-cards {
+        flex-direction: column;
+    }
+    .spotlight {
+        width: 100%; /* Full width on mobile */
+    }
+}
