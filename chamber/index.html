@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremie Chamber of Commerce - Index</title>
+    <meta name="description" content="Home Page of local businesses and organizations affiliated with the Jeremie Chamber of Commerce.">
+    <meta name="author" content="Guelson Laguerre">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Jeremie Chamber of Commerce Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/wdd231/chamber/images/og-image.jpg"> <!-- Local image URL -->
+    <meta property="og:url" content="/wdd231/chamber/index.html"> <!-- Local page URL -->
+    <!-- <meta property="og:image" content="https://your-image-url.com/image.jpg">
+    <meta property="og:url" content="https://your-website-url.com/index.html"> -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- <script src="scripts/lastmod.js" defer></script> -->
+    <script src="scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo-and-title">
+            <img src="images/logo.png" alt="Chamber Logo" id="logo">
+            <div>
+                <h1>Jeremie</h1>
+                <h3>Chamber of Commerce</h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html" class="">Directory</a></li>
+                <li><a href="join.html" class="">Join</a></li>
+                <li><a href="discover.html" class="">Discover</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle">☰</button>
+    </header>
+    <!-- Main Content --> 
+    <main>
+        <!-- <section class="hero">
+            <img src="images/hero-image.jpg" alt="Hero Image" class="responsive-hero">
+            <a href="join.html" class="cta-join">Join the Chamber of Commerce</a>
+        </section> -->
+        <section class="hero">
+            <img src="images/hero-image4.jpg" alt="Chamber Hero Image" class="responsive-hero"> <!-- Adjust image path -->
+            <a href="join.html" class="cta-ticket">Keynote Tickets</a> <!-- Link to tickets page -->
+        </section>
+        <!-- <div class="parallel-sections">
+            <section class="events" style="width: 50%;">
+                <h2>Events</h2>
+                <ul id="events-list">
+                    Contenu dynamique ici
+                </ul>
+            </section>
+            
+            <section class="weather" style="width: 25%;">
+                <h2>Current Weather</h2>
+                <img id="weather-image" alt="Weather Icon">
+                <div id="weather-data">
+                    <p>Loading weather data...</p>
+                </div>
+            </section>
+            
+            <section class="forecast" style="width: 25%;">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-data">
+                    <p>Loading forecast data...</p>
+                </div>
+            </section>
+        </div> -->
+        <h1>Home</h1>
+        <div class="parallel-sections">
+            <section class="events" style="width: 48%;">
+                <h2>Events</h2>
+                <ul id="events-list">
+                    <!-- Contenu dynamique ici -->
+                </ul>
+            </section>
+            
+            <!-- <section class="weather" style="width: 23%;">
+                <h2>Current Weather</h2>
+                <img id="weather-image" alt="Weather Icon" style="max-width: 100%;">
+                <div id="weather-data">
+                    <p>Loading weather data...</p>
+                </div>
+            </section> -->
+
+
+            <section class="weather" style="width: 23%;">
+                <h2>Current Weather</h2>
+                <div style="display: flex; align-items: flex-start;">
+                <!-- <div style="display: flex; align-items: center;"> -->
+                    <img id="weather-image" alt="Weather Icon" style="max-width: 75px; margin-right: 10px;">
+                    <div id="weather-data" style="line-height: 2;">
+                        <p>Loading weather data...</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="forecast" style="width: 25%;">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-data">
+                    <p>Loading forecast data...</p>
+                </div>
+            </section>
+        </div>
+        <section class="business-spotlights">
+            <h2>Business Spotlights</h2>
+            <!-- <div id="spotlights-container"> -->
+                <!-- Contenu dynamique ici -->
+            <!-- </div> -->
+            <div class="member-list" id="spotlights-container">
+                <!-- Les cartes des membres seront injectées ici par JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="left">
+                <p>Jeremie Chamber of Commerce</p>
+                <p>15, Cherleas Michel, Calas</p>
+                <p>Grand'Anse, Haiti</p>
+                <p>info@lgg05-chamber.com</p>
+                <p>+509 22883400</p>
+            </div>
+            <div class="center">
+                <nav class="sociallinks">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.png" alt="Facebook">  
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter.png" alt="Twitter">  
+                    </a>
+                    <a href="https://instagram.com">
+                        <img src="images/instagram.png" alt="Instagram">  
+                    </a>
+                </nav>
+            </div>
+            <div class="right">
+                <p>WDD231 Class Project</p>
+                <p>Guelson Laguerre</p>
+                <!-- <p>&copy; 2024 Jeremie Chamber of Commerce</p> -->
+                <p>&copy; <span id="currentyear"></span> Jeremie Chamber of Commerce</p>
+                <p id="lastModified" class="yellowpart"></p>
+                <!-- <p id="copyright-info"></p>
+                <p id="last-modified-info" class="yellowpart"></p> -->
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

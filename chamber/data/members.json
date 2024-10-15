@@ -6,16 +6,20 @@
         "website": "https://cadeauchic.com",
         "image": "images/logo-cadeauchic.jpg",
         "membership_level": 2,
-        "description": "Trendy boutique offering unique clothing and accessories."
+        "description": "Trendy boutique offering unique clothing and accessories.",
+        "email": "info@cadeauchic.com",
+        "tagline": "Fashion for Everyone"
     },
     {
         "name": "Sommet Bar And Grill",
         "address": "56 Caracolie, Jeremie, GA",
-        "phone": "509) 2234-5678",
-        "website": "https://sommetbarandgrill.com",
+        "phone": "(509) 2234-5678",
+        "website": "https://sommetbar&grill.com",
         "image": "images/logo-sommet.jpg",
         "membership_level": 3,
-        "description": "Fine dining deli with fresh, local ingredients."
+        "description": "Fine dining deli with fresh, local ingredients.",
+        "email": "info@sommetbar&grill.com",
+        "tagline": "Taste the Summit"
     },
     {
         "name": "Tech Hub",
@@ -24,7 +28,9 @@
         "website": "https://techhub.com",
         "image": "images/logo-techhub.jpg",
         "membership_level": 1,
-        "description": "Co-working space for tech startups and freelancers."
+        "description": "Co-working space for tech startups and freelancers.",
+        "email": "contact@techhub.com",
+        "tagline": "Innovate Together"
     },
     {
         "name": "Ardouin Bakery",
@@ -33,7 +39,9 @@
         "website": "https://ardrouinbakery.com",
         "image": "images/logo-ardrouinbakery.jpg",
         "membership_level": 2,
-        "description": "Freshly baked goods daily, from bread to pastries."
+        "description": "Freshly baked goods daily, from bread to pastries.",
+        "email": "info@ardouinbakery.com",
+        "tagline": "Baked Fresh Daily"
     },
     {
         "name": "Ronne Studio",
@@ -42,7 +50,9 @@
         "website": "https://ronnestudio.com",
         "image": "images/logo-ronnestudio.jpg",
         "membership_level": 3,
-        "description": "Community-focused fitness classes and training."
+        "description": "Community-focused fitness classes and training.",
+        "email": "info@ronnestudio.com",
+        "tagline": "Strength in Community"
     },
     {
         "name": "Artisan Crafts",
@@ -51,15 +61,19 @@
         "website": "https://artisancrafts.com",
         "image": "images/logo-artisancrafts.jpg",
         "membership_level": 1,
-        "description": "Local crafts and handmade goods."
+        "description": "Local crafts and handmade goods.",
+        "email": "info@artisancrafts.com",
+        "tagline": "Crafted with Love"
     },
     {
         "name": "Reference Store",
-        "address": "159 Eugene MArgron, Jeremie, GA",
+        "address": "159 Eugene Margron, Jeremie, GA",
         "phone": "(509) 3789-0123",
         "website": "https://referencestore.com",
         "image": "images/logo-referencestore.jpg",
         "membership_level": 2,
-        "description": "Sustainable products for a greener lifestyle."
+        "description": "Sustainable products for a greener lifestyle.",
+        "email": "info@referencestore.com",
+        "tagline": "Eco-Friendly Choices"
     }
 ]

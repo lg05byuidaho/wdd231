@@ -73,41 +73,13 @@ nav a:hover {
     color: yellow; /* Color on hover */
 }
 
+nav ul li a.active {
+    color: yellow; /* Changez la couleur pour indiquer l'élément actif */
+    font-weight: bold; /* Met en gras l'élément actif */
+}
+
 
 /* -------------------------------- */
-
-
-
-/* ------------------------------- */
-
-main {
-    padding: 20px;
-}
-
-h2 {
-    color: #003366; /* Primary Color */
-}
-
-.member-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.member-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 15px;
-    width: 300px; /* Adjust for your design */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.member-card:hover {
-    transform: scale(1.05);
-}
 
 
 /* FOOTER PARTS */
@@ -172,6 +144,7 @@ nav.sociallinks img {
     width: 50px; /* Ajustez la taille des icônes */
     height: 50px; /* Ajustez la taille des icônes */
 }
+
 /* ---------------------------------------- */
 
 /* Responsive Styles */
@@ -198,6 +171,39 @@ nav.sociallinks img {
 }
 
 
+/* DIRECTORY PARTS */
+
+/* ------------------------------- */ */
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #003366; /* Primary Color */
+}
+
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px; /* Adjust for your design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
 
 .member-list.grid-view {
     display: flex;
@@ -217,14 +223,17 @@ nav.sociallinks img {
 
 
 
-/* HOME PAGE PARTS */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.member-card p {
+    margin: 5px 0;
 }
 
-.hero {
+ /* -------------------------------------------------------- */
+
+/* HOME PAGE PARTS */
+
+
+ /* Section hero */
+ .hero {
     position: relative;
 }
 
@@ -235,63 +244,141 @@ body {
 
 .cta-ticket {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 60px;
+    right: 60px;
     background-color: #f39c12;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.info-sections {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+/* ***************************************** */
+
+/* Styles pour les sections */
+section {
+    background-color: #f0f0f0; /* Couleur de fond pour les sections */
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    border-radius: 8px;
 }
 
-.events, .current-weather, .weather-forecast {
+/* Couleur spécifique pour les en-têtes */
+h2 {
+    background-color: #0d2c70; /* Couleur d'arrière-plan des titres */
+    color: white;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+
+/* Conteneur pour les sections parallèles */
+.parallel-sections {
+    display: flex;
+    justify-content: space-between; /* Espace entre les sections */
+    margin-bottom: 20px; /* Espace sous les sections */
+}
+
+.events, .weather, .forecast {
+    padding: 20px;
+}
+
+#weather-image {
+    max-width: 50px; /* Ajuste la taille de l'icône */
+    margin-right: 10px; /* Espace entre l'image et le texte */
+}
+
+
+/* Autres styles existants */
+section {
+    background-color: #f0f0f0; /* Couleur de fond pour les sections */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Couleur spécifique pour les titres de section */
 .section-title {
-    background-color: #f1c40f; /* Couleur de fond pour les titres */
+    background-color: #0d2c70; /* Couleur d'arrière-plan des titres */
+    color: white;
     padding: 10px;
-    margin: -10px -10px 10px; /* Ajuste l'espacement */
-}
-
-.business-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.spotlight {
-    border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
+}
+
+
+/* Member List */
+.member-list {
+    display: flex; /* Utiliser Flexbox pour l'affichage en ligne */
+    flex-wrap: wrap; /* Permettre aux cartes de passer à la ligne si nécessaire */
+    justify-content: space-between; /* Espacement entre les cartes */
+}
+
+.member-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     margin: 10px;
-    width: calc(30% - 20px);
+    padding: 15px;
+    width: calc(30% - 20px); /* Ajuster pour trois cartes par ligne */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
-.card-separator {
-    border-top: 1px solid #ccc;
-    margin: 10px 0;
+.member-card h3 {
+    text-align: center; /* Centre le texte */
 }
 
+.member-card p.tagline {
+    text-align: center; /* Centre uniquement le tagline */
+}
+
+.member-card p {
+    font-size: 0.9em; /* Réduisez la taille du paragraphe */
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.card-details {
+    display: flex; /* Utiliser Flexbox pour la mise en page interne */
+    align-items: center; /* Aligner verticalement les éléments */
+}
+
+.card-image {
+    max-width: 50%; /* Limiter la taille de l'image */
+    margin-right: 10px; /* Espace entre l'image et le texte */
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
-    .info-sections {
-        flex-direction: column;
-    }
-    .events, .current-weather, .weather-forecast {
-        width: 100%; /* Stack on mobile */
-    }
-    .business-cards {
-        flex-direction: column;
-    }
-    .spotlight {
-        width: 100%; /* Full width on mobile */
+    .member-card {
+        width: calc(48% - 20px); /* Deux cartes par ligne sur écrans moyens */
     }
 }
+
+@media (max-width: 480px) {
+    .member-card {
+        width: 100%; /* Une carte par ligne sur petits écrans */
+    }
+}
+
+/* ----------------- */
+
+
+/* JOIN PARTS */
+
+/* Basic styles for the form and membership cards */
+.membership-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.membership-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Add additional styles as necessary */

@@ -97,8 +97,8 @@ nav a:hover {
 }
 
 nav a.active {
-    background-color: white; /* Highlight color for active link */
-    color: black; /* Text color for active link */
+    /* background-color: white; Highlight color for active link */
+    color: yellow; /* Text color for active link */
 }
 
 
@@ -294,6 +294,24 @@ footer {
 
 
 
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
 
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}

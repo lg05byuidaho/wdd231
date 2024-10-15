@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremie Chamber of Commerce - Directory</title>
-    <meta name="description" content="Directory of local businesses and organizations affiliated with the Jeremie Chamber of Commerce.">
+    <title>Jeremie Chamber of Commerce - Index</title>
+    <meta name="description" content="Home Page of local businesses and organizations affiliated with the Jeremie Chamber of Commerce.">
     <meta name="author" content="Guelson Laguerre">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Jeremie Chamber of Commerce Directory">
+    <meta property="og:title" content="Jeremie Chamber of Commerce Home">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/wdd231/chamber/images/og-image.jpg"> <!-- Local image URL -->
-    <meta property="og:url" content="/wdd231/chamber/directory.html"> <!-- Local page URL -->
-    <!-- <meta property="og:image" content="/images/og-image.jpg">  -->
-    <!-- <meta property="og:image" content="images/og-image.jpg"> -->
-    <!-- <meta property="og:image" content="https://your-image-url.com/image.jpg"> -->
-    <!-- <meta property="og:image" content="https://lg05byuidaho.github.io/wdd231/chamber/images/og-image.jpg">
-    <meta property="og:url" content="https://lg05byuidaho.github.io/wdd231/chamber/directory.html"> -->
+    <meta property="og:url" content="/wdd231/chamber/index.html"> <!-- Local page URL -->
+    <!-- <meta property="og:image" content="https://your-image-url.com/image.jpg">
+    <meta property="og:url" content="https://your-website-url.com/index.html"> -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <!-- <script src="scripts/lastmod.js" defer></script> -->
@@ -27,46 +24,17 @@
 </head>
 <body>
     <header>
-        <div class="logo-and-title">
-            <img src="images/logo.png" alt="Chamber Logo" id="logo">
-            <div>
-                <h1>Jeremie</h1>
-                <h3>Chamber of Commerce</h3>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="join.html" class="">Join</a></li>
-                <li><a href="discover.html" class="">Discover</a></li>
-            </ul>
-        </nav>
-        <button class="nav-toggle">☰</button>
+        <h1>Thank You for Joining Us!</h1>
     </header>
-    
 
     <main>
-        <h2>Directory of Members</h2>
-        <div>
-            <button id="grid-view-btn">Grid View</button>
-            <button id="list-view-btn">List View</button>
-         </div>         
-        <div class="member-list">
-            <!-- <div class="member-card">
-                <h3>Business Name 1</h3>
-                <p>Description of Business 1</p>
-                <p>Contact: (555) 123-4567</p>
-            </div>
-            <div class="member-card">
-                <h3>Business Name 2</h3>
-                <p>Description of Business 2</p>
-                <p>Contact: (555) 987-6543</p>
-            </div> -->
-            <!-- Add more member cards as needed -->
-        <!-- </div> -->
-            <!-- Member cards will go here -->
-        </div>
+        <h2>Your Submission Details</h2>
+        <p><strong>First Name:</strong> <span id="first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="mobile"></span></p>
+        <p><strong>Business Name:</strong> <span id="business-name"></span></p>
+        <p><strong>Submission Timestamp:</strong> <span id="timestamp"></span></p>
     </main>
     <footer>
         <div class="footer-content">
@@ -102,5 +70,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('first-name').textContent = urlParams.get('first-name');
+        document.getElementById('last-name').textContent = urlParams.get('last-name');
+        document.getElementById('email').textContent = urlParams.get('email');
+        document.getElementById('mobile').textContent = urlParams.get('mobile');
+        document.getElementById('business-name').textContent = urlParams.get('business-name');
+        document.getElementById('timestamp').textContent = urlParams.get('timestamp');
+    </script>
 </body>
 </html>
