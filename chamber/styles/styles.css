@@ -296,15 +296,41 @@ h2 {
 }
 
 
+/* Ajoutez des styles supplémentaires si nécessaire */
+
+
+
 /* Conteneur pour les sections parallèles */
 .parallel-sections {
     display: flex;
     justify-content: space-between; /* Espace entre les sections */
+    gap: 10px;
     margin-bottom: 20px; /* Espace sous les sections */
 }
 
 .events, .weather, .forecast {
     padding: 20px;
+}
+
+.events {
+    width: 48%; /* Largeur de la section des événements */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.weather {
+    width: 25%; /* Largeur de la section de prévisions */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.forecast {
+    width: 25%; /* Largeur de la section de prévisions */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
 #weather-image {
