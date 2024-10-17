@@ -154,7 +154,6 @@ async function fetchWeather() {
 //     `;
 // }
 
-
 function displayWeather(data) {
     const temperature = Math.round(data.main.temp);
     const weatherDescription = data.weather.map(w => w.description.charAt(0).toUpperCase() + w.description.slice(1)).join(', ');
@@ -166,7 +165,7 @@ function displayWeather(data) {
 
     // Ajouter l'icône météo
     const weatherImage = document.getElementById('weather-image');
-    weatherImage.src = 'images/weather-image.png'; // Chemin de l'icône
+    weatherImage.src = 'images/weather-image.png'; // Mettre à jour avec le chemin de l'image
     weatherImage.alt = weatherDescription;
 
     document.getElementById('weather-data').innerHTML = `
@@ -174,12 +173,11 @@ function displayWeather(data) {
         ${weatherDescription}<br>
         Humidity: ${humidity}%<br>
         High: ${high}°F<br>
-        Low: ${low}°F<br
+        Low: ${low}°F<br>
         Sunrise: ${sunrise}<br>
         Sunset: ${sunset}
     `;
 }
-
 
 
 // function displayWeather(data) {
