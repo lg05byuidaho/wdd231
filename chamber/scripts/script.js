@@ -382,25 +382,50 @@ function displayMembers(members) {
 
 // JOIN PART
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Show membership cards with animation
-    const cards = document.querySelectorAll('.membership-card');
-    cards.forEach((card, index) => {
-        setTimeout(() => {
-            card.classList.add('show');
-        }, index * 300);
-    });
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Show membership cards with animation
+//     const cards = document.querySelectorAll('.membership-card');
+//     cards.forEach((card, index) => {
+//         setTimeout(() => {
+//             card.classList.add('show');
+//         }, index * 300);
+//     });
 
-    // Handle modal display
-    const buttons = document.querySelectorAll('button[data-modal]');
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modalId = button.getAttribute('data-modal');
-            const modal = document.getElementById(modalId);
-            modal.style.display = 'block'; // Show modal (additional styles needed)
-        });
-    });
+//     // Handle modal display
+//     const buttons = document.querySelectorAll('button[data-modal]');
+//     buttons.forEach(button => {
+//         button.addEventListener('click', () => {
+//             const modalId = button.getAttribute('data-modal');
+//             const modal = document.getElementById(modalId);
+//             modal.style.display = 'block'; // Show modal (additional styles needed)
+//         });
+//     });
 
-    // Set the timestamp
-    document.getElementById('timestamp').value = new Date().toISOString();
+//     // Set the timestamp
+//     document.getElementById('timestamp').value = new Date().toISOString();
+// });
+
+
+// *********************************************************************************************
+
+
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Pour thankyou.html
+    if (document.getElementById('first-name')) {
+        document.getElementById('first-name').textContent = urlParams.get('first-name');
+        document.getElementById('last-name').textContent = urlParams.get('last-name');
+        document.getElementById('email').textContent = urlParams.get('email');
+        document.getElementById('mobile').textContent = urlParams.get('mobile');
+        document.getElementById('business-name').textContent = urlParams.get('business-name');
+        document.getElementById('timestamp').textContent = new Date(urlParams.get('timestamp')).toLocaleString();
+    }
+    
+    // Pour join.html
+    const timestampInput = document.getElementById('timestamp');
+    if (timestampInput) {
+        timestampInput.value = new Date().toISOString();
+    }
 });

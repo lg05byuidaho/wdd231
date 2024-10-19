@@ -10,6 +10,7 @@ body {
     color: #333333; /* Text Color */
 }
 
+
 /* HEADER PARTS */
 header {
     display: flex;
@@ -30,9 +31,13 @@ header {
     margin-right: 15px; /* Spacing between the logo and the title */
 }
 
-.logo-and-title h1,
+.logo-and-title h1 {
+    margin: 0; /* Remove default margin from h1 */
+}
+
 .logo-and-title h3 {
-    margin: 0; /* Remove default margin from h1 and h3 */
+    margin: 0; /* Remove default margin from h3 */
+    margin-top: 5px; /* Adjust this value for the space between h1 and h3 */
 }
 
 nav {
@@ -73,10 +78,27 @@ nav ul li a.active {
     font-weight: bold; /* Met en gras l'élément actif */
 }
 
+
+/* -------------------------------- */
+
+
 /* FOOTER PARTS */
+
+/* footer {
+    background-color: #003366; Primary Color
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+} */
+
+
 footer {
     background-color: #0d2c70d8;
     color: #fff;
+    /* background-color: #f1f1f1; */
     padding: 20px;
 }
 
@@ -86,13 +108,27 @@ footer {
     align-items: center;
     flex-wrap: wrap; /* Pour permettre le passage à la ligne si l'espace est limité */
     margin: 0;
-    padding: 0 25px;
+    padding: 0;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-.left, .center, .right {
+.left {
     flex: 1;
-    margin: 0; /* Remove default margin */
     text-align: left;
+    margin: 0; /* Remove default margin from h3 */
+}
+
+.center {
+    flex: 1;
+    text-align: center;
+    margin: 0; /* Remove default margin from h3 */
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+    margin: 0; /* Remove default margin from h3 */
 }
 
 nav.sociallinks {
@@ -108,6 +144,8 @@ nav.sociallinks img {
     width: 50px; /* Ajustez la taille des icônes */
     height: 50px; /* Ajustez la taille des icônes */
 }
+
+/* ---------------------------------------- */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -132,7 +170,11 @@ nav.sociallinks img {
     }
 }
 
+
 /* DIRECTORY PARTS */
+
+/* ------------------------------- */
+
 main {
     padding: 20px;
 }
@@ -162,18 +204,37 @@ h2 {
     transform: scale(1.05);
 }
 
+
+.member-list.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member-list.list-view {
+    display: block;
+}
+
 .member-card img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
+
+
 .member-card p {
     margin: 5px 0;
 }
 
+ /* -------------------------------------------------------- */
+
 /* HOME PAGE PARTS */
-.hero {
+
+
+ /* Section hero */
+
+ .hero {
     position: relative;
 }
 
@@ -194,9 +255,9 @@ h2 {
 }
 
 h1 {
-    margin-top: 20px;
-    margin-left: 20px;
-    text-align: left;
+    margin-top: 20px; /* Ajustez la marge supérieure selon vos besoins */
+    margin-left: 20px; /* Ajustez la marge gauche selon vos besoins */
+    text-align: left; /* Assurez-vous que le texte est aligné à gauche */
 }
 
 .weather {
@@ -216,12 +277,13 @@ h1 {
 .weather-info {
     line-height: 2;
 }
+/* ***************************************** */
 
 /* Styles pour les sections */
 section {
     background-color: #f0f0f0; /* Couleur de fond pour les sections */
     padding: 20px;
-    border: 1px solid #ddd;
+    /* margin-bottom: 20px; */
     border-radius: 8px;
 }
 
@@ -230,7 +292,13 @@ h2 {
     background-color: #0d2c70; /* Couleur d'arrière-plan des titres */
     color: white;
     padding: 10px;
+    border-radius: 5px;
 }
+
+
+/* Ajoutez des styles supplémentaires si nécessaire */
+
+
 
 /* Conteneur pour les sections parallèles */
 .parallel-sections {
@@ -242,6 +310,24 @@ h2 {
 
 .events, .weather, .forecast {
     padding: 20px;
+}
+
+.events {
+    width: 48%; /* Largeur de la section des événements */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.weather {
+    width: 25%; /* Largeur de la section de prévisions */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.forecast {
+    width: 25%; /* Largeur de la section de prévisions */
     background-color: #fff; /* Couleur de fond */
     border-radius: 8px; /* Coins arrondis */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
@@ -252,7 +338,86 @@ h2 {
     margin-right: 10px; /* Espace entre l'image et le texte */
 }
 
+
+/* Autres styles existants */
+section {
+    background-color: #f0f0f0; /* Couleur de fond pour les sections */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Couleur spécifique pour les titres de section */
+.section-title {
+    background-color: #0d2c70; /* Couleur d'arrière-plan des titres */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Member List */
+.member-list {
+    display: flex; /* Utiliser Flexbox pour l'affichage en ligne */
+    flex-wrap: wrap; /* Permettre aux cartes de passer à la ligne si nécessaire */
+    justify-content: space-between; /* Espacement entre les cartes */
+}
+
+.member-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(30% - 20px); /* Ajuster pour trois cartes par ligne */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.member-card h3 {
+    text-align: center; /* Centre le texte */
+}
+
+.member-card p.tagline {
+    text-align: center; /* Centre uniquement le tagline */
+}
+
+.member-card p {
+    font-size: 0.9em; /* Réduisez la taille du paragraphe */
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.card-details {
+    display: flex; /* Utiliser Flexbox pour la mise en page interne */
+    align-items: center; /* Aligner verticalement les éléments */
+}
+
+.card-image {
+    max-width: 50%; /* Limiter la taille de l'image */
+    margin-right: 10px; /* Espace entre l'image et le texte */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .member-card {
+        width: calc(48% - 20px); /* Deux cartes par ligne sur écrans moyens */
+    }
+}
+
+@media (max-width: 480px) {
+    .member-card {
+        width: 100%; /* Une carte par ligne sur petits écrans */
+    }
+}
+
+/* ----------------- */
+
+
 /* JOIN PARTS */
+
 .form-container {
     display: flex;
     justify-content: space-between;
@@ -272,61 +437,42 @@ label {
     margin: 10px 0 5px;
 }
 
-input, select, textarea {
-    width: calc(100% - 16px); /* Full width accounting for padding */
-    margin: 5px 0; /* Spacing between inputs */
+input, textarea {
+    width: 97%;
+    margin-bottom: 10px;
     padding: 8px;
+    margin-right: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input:required {
-    border: 1px solid red; /* Border for required fields */
-}
-
-input:not(:required) {
-    border: 1px solid black; /* Border for optional fields */
-}
 
 
 
 
-/* **************** */
+/* **************************************** */
 
 .membership-radio {
     margin: 10px 0; /* Espace entre cette section et les autres éléments */
-    text-align: left; /* Aligne le texte à gauche */
 }
 
 .membership-radio label {
     display: flex; /* Utilise Flexbox pour l'alignement */
     align-items: center; /* Centre verticalement le texte avec le bouton */
     margin-bottom: 5px; /* Espace entre chaque option */
-    cursor: pointer; /* Curseur main au survol */
 }
 
 .membership-radio input[type="radio"] {
     margin-right: 10px; /* Espace entre le bouton et le texte */
     transform: scale(1.2); /* Agrandir le bouton pour le rendre plus visible */
-    appearance: radio; /* S'assurer que le style par défaut est appliqué */
 }
 
-/* Styles pour éviter les bordures indésirables */
+/* Pour s'assurer que les boutons ne sont pas centrés dans la div */
 .membership-radio {
-    list-style: none; /* Supprime les puces de liste */
-    padding: 0; /* Supprime le padding par défaut */
-    margin: 0; /* Supprime la marge par défaut */
+    text-align: left; /* Aligne le texte à gauche */
 }
 
-/* Pour les boutons et les champs de saisie */
-input[type="radio"],
-input[type="checkbox"] {
-    -webkit-appearance: radio; /* Retire le style par défaut sur WebKit */
-    -moz-appearance: radio; /* Retire le style par défaut sur Firefox */
-    appearance: radio; /* Retire le style par défaut sur d'autres navigateurs */
-}
 
-/* *************** */
 .membership-cards {
     display: flex;
     flex-direction: column; /* Permet de les empiler verticalement */
@@ -347,10 +493,10 @@ input[type="checkbox"] {
 }
 
 
-/* Boutons de soumission */
 .submit-button {
-    width: 45%; /* Spécifiez une largeur fixe */
-    margin: 20px auto 0; /* Centre le bouton avec espace au-dessus */
+    flex-basis: auto; /* Ajustez la largeur par défaut */
+    width: 45%; /* Spécifiez une largeur fixe ou ajustez selon vos besoins */
+    margin: 0 auto; /* Centre le bouton */
     padding: 10px;
     background-color: #28a745; /* Couleur de fond du bouton */
     color: white; /* Couleur du texte du bouton */
@@ -363,39 +509,4 @@ input[type="checkbox"] {
 .submit-button:hover {
     background-color: #ffd501; /* Couleur du bouton au survol */
     color: #000;
-}
-
-
-/* Vendor-specific styles */
-input, textarea, select {
-    -webkit-appearance: none; /* Suppress default styling for WebKit browsers */
-    -moz-appearance: none; /* Suppress default styling for Firefox */
-}
-
-
-
-
-.submission-details {
-    background-color: #ffffff; /* Couleur de fond blanche */
-    border: 1px solid #ccc; /* Bordure grise */
-    border-radius: 8px; /* Coins arrondis */
-    padding: 20px; /* Espacement interne */
-    margin: 20px auto; /* Centrer le conteneur */
-    max-width: 600px; /* Largeur maximale pour une meilleure lisibilité */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner de la profondeur */
-}
-
-h2 {
-    color: #fff; /* Couleur pour le titre */
-    text-align: center; /* Centrer le titre */
-    margin-bottom: 15px; /* Espace sous le titre */
-}
-
-p {
-    margin: 10px 0; /* Espace vertical entre les paragraphes */
-    line-height: 1.5; /* Espacement entre les lignes pour plus de lisibilité */
-}
-
-strong {
-    color: #333; /* Couleur du texte fort */
 }

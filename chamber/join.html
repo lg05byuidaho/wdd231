@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremie Chamber of Commerce - Index</title>
-    <meta name="description" content="Home Page of local businesses and organizations affiliated with the Jeremie Chamber of Commerce.">
-    <meta name="author" content="Guelson Laguerre">
+    <title>Jeremie Chamber of Commerce - Join</title>
+    <meta name="description" content="Join Page of local businesses and organizations affiliated with the Jeremie Chamber of Commerce.">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Jeremie Chamber of Commerce Home">
+    <meta property="og:title" content="Jeremie Chamber of Commerce Join">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/wdd231/chamber/images/og-image.jpg"> <!-- Local image URL -->
-    <meta property="og:url" content="/wdd231/chamber/index.html"> <!-- Local page URL -->
-    <!-- <meta property="og:image" content="https://your-image-url.com/image.jpg">
-    <meta property="og:url" content="https://your-website-url.com/index.html"> -->
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="join.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- <script src="scripts/lastmod.js" defer></script> -->
     <script src="scripts/script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
 </head>
 <body>
+    <!-- <header>
+        <div class="logo-and-title">
+            <img src="images/logo.png" alt="Chamber Logo" id="logo">
+            <h1>Jeremie</h1>
+            <h3>Chamber of Commerce</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header> -->
     <header>
         <div class="logo-and-title">
             <img src="images/logo.png" alt="Chamber Logo" id="logo">
@@ -42,77 +49,90 @@
         <button class="nav-toggle">☰</button>
     </header>
     <main>
-        <form method="GET" action="thankyou.html">
-            <label>
-                First Name:
-                <input type="text" name="first-name" title="Your first name" required autocomplete="given-name">
-            </label>
-            <label>
-                Last Name:
-                <input type="text" name="last-name" title="Your last name" required autocomplete="family-name">
-            </label>
-            <label>
-                Organizational Title:
-                <input type="text" name="org-title" title="Your organizational title" pattern="^[A-Za-z\- ]{7,}$" autocomplete="organization-title">
-            </label>
-            <label>
-                Email:
-                <input type="email" name="email" title="Your email address" required autocomplete="email" placeholder="example@example.com">
-            </label>
-            <label>
-                Mobile Phone:
-                <input type="tel" name="mobile" title="Your mobile phone number" required autocomplete="tel">
-            </label>
-            <label>
-                Business Name:
-                <input type="text" name="business-name" title="Your business or organization's name" required autocomplete="organization">
-            </label>
-            <label>
-                Membership Level:
-                <select name="membership" title="Select a membership level">
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </label>
-            <label>
-                Description:
-                <textarea name="description" title="Business description"></textarea>
-            </label>
-            <input type="hidden" name="timestamp" id="timestamp">
-            <input type="submit" value="Submit">
-        </form>
-
-        <div class="membership-cards">
-            <div class="membership-card" id="np-card">
-                <h3>NP Membership</h3>
-                <p>No fee. For non-profit organizations.</p>
-                <button data-modal="np-modal">Learn More</button>
-            </div>
-            <div class="membership-card" id="bronze-card">
-                <h3>Bronze Membership</h3>
-                <p>Basic benefits.</p>
-                <button data-modal="bronze-modal">Learn More</button>
-            </div>
-            <div class="membership-card" id="silver-card">
-                <h3>Silver Membership</h3>
-                <p>More benefits.</p>
-                <button data-modal="silver-modal">Learn More</button>
-            </div>
-            <div class="membership-card" id="gold-card">
-                <h3>Gold Membership</h3>
-                <p>Premium benefits.</p>
-                <button data-modal="gold-modal">Learn More</button>
-            </div>
+        <div class="form-container">
+            <section class="application-form">
+                <h2>Membership Application Form</h2>
+                <form method="GET" action="thankyou.html">
+                    <label>
+                        First Name:
+                        <input type="text" name="first-name" title="Your first name" required autocomplete="given-name">
+                    </label>
+                    <label>
+                        Last Name:
+                        <input type="text" name="last-name" title="Your last name" required autocomplete="family-name">
+                    </label>
+                    <label>
+                        Organizational Title:
+                        <input type="text" name="org-title" title="Your organizational title" required autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$">
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" title="Your email address" required autocomplete="email" placeholder="example@example.com">
+                    </label>
+                    <label>
+                        Mobile Phone:
+                        <input type="tel" name="mobile" title="Your mobile phone number" required autocomplete="tel">
+                    </label>
+                    <label>
+                        Business Name:
+                        <input type="text" name="business-name" title="Your business or organization's name" required autocomplete="organization">
+                    </label>
+                    <label>Membership Level:</label>
+                    <div class="membership-radio">
+                        <label>
+                            <input type="radio" name="membership" value="np" required>
+                            NP Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </div>
+                    <label>
+                        Description:
+                        <textarea name="description" title="Business description"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Submit" class="submit-button">
+                </form>
+            </section>
+    
+            <section class="membership-levels">
+                <h2>Membership Levels</h2>
+                <div class="membership-cards">
+                    <div class="membership-card" id="np-card">
+                        <h3>NP Membership</h3>
+                        <p>No fee. For non-profit organizations.</p>
+                        <button class="learn-more" data-modal="np-modal">Learn More</button>
+                    </div>
+                    <div class="membership-card" id="bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic benefits.</p>
+                        <button class="learn-more" data-modal="bronze-modal">Learn More</button>
+                    </div>
+                    <div class="membership-card" id="silver-card">
+                        <h3>Silver Membership</h3>
+                        <p>More benefits.</p>
+                        <button class="learn-more" data-modal="silver-modal">Learn More</button>
+                    </div>
+                    <div class="membership-card" id="gold-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium benefits.</p>
+                        <button class="learn-more" data-modal="gold-modal">Learn More</button>
+                    </div>
+                </div>
+            </section>
         </div>
-
-        <!-- Modals -->
-        <div class="modal" id="np-modal">Benefits of NP Membership</div>
-        <div class="modal" id="bronze-modal">Benefits of Bronze Membership</div>
-        <div class="modal" id="silver-modal">Benefits of Silver Membership</div>
-        <div class="modal" id="gold-modal">Benefits of Gold Membership</div>
     </main>
+    
     <footer>
         <div class="footer-content">
             <div class="left">

@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremie Chamber of Commerce - Index</title>
-    <meta name="description" content="Home Page of local businesses and organizations affiliated with the Jeremie Chamber of Commerce.">
-    <meta name="author" content="Guelson Laguerre">
+    <title>Jeremie Chamber of Commerce - Thank You</title>
+    <meta name="description" content="Thank you Page of local businesses and organizations affiliated with the Jeremie Chamber of Commerce.">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Jeremie Chamber of Commerce Home">
+    <meta property="og:title" content="Jeremie Chamber of Commerce Thank you">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/wdd231/chamber/images/og-image.jpg"> <!-- Local image URL -->
-    <meta property="og:url" content="/wdd231/chamber/index.html"> <!-- Local page URL -->
-    <!-- <meta property="og:image" content="https://your-image-url.com/image.jpg">
-    <meta property="og:url" content="https://your-website-url.com/index.html"> -->
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="thankyou.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- <script src="scripts/lastmod.js" defer></script> -->
     <script src="scripts/script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
-        <h1>Thank You for Joining Us!</h1>
+        <div class="logo-and-title">
+            <img src="images/logo.png" alt="Chamber Logo" id="logo">
+            <div>
+                <h1>Jeremie</h1>
+                <h3>Chamber of Commerce</h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="">Home</a></li>
+                <li><a href="directory.html" class="">Directory</a></li>
+                <li><a href="join.html" class="">Join</a></li>
+                <li><a href="discover.html" class="">Discover</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle">☰</button>
     </header>
 
-    <main>
+    <main class="submission-details">
+        <h2>Your Submission Details</h2>
+        <p><strong>First Name:</strong> <span id="first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="mobile"></span></p>
+        <p><strong>Business Name:</strong> <span id="business-name"></span></p>
+    </main>
+    
+    <!-- <main>
         <h2>Your Submission Details</h2>
         <p><strong>First Name:</strong> <span id="first-name"></span></p>
         <p><strong>Last Name:</strong> <span id="last-name"></span></p>
@@ -35,7 +50,7 @@
         <p><strong>Mobile Number:</strong> <span id="mobile"></span></p>
         <p><strong>Business Name:</strong> <span id="business-name"></span></p>
         <p><strong>Submission Timestamp:</strong> <span id="timestamp"></span></p>
-    </main>
+    </main> -->
     <footer>
         <div class="footer-content">
             <div class="left">
@@ -70,15 +85,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        document.getElementById('first-name').textContent = urlParams.get('first-name');
-        document.getElementById('last-name').textContent = urlParams.get('last-name');
-        document.getElementById('email').textContent = urlParams.get('email');
-        document.getElementById('mobile').textContent = urlParams.get('mobile');
-        document.getElementById('business-name').textContent = urlParams.get('business-name');
-        document.getElementById('timestamp').textContent = urlParams.get('timestamp');
-    </script>
 </body>
 </html>
