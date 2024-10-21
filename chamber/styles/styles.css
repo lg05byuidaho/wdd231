@@ -343,9 +343,20 @@ input[type="checkbox"] {
 
 /* Animation d'apparition des cartes */
 .membership-card:hover {
-    transform: translateY(-5px); /* Légère montée au survol */
+    transform: translateY(-10px); /* Légère montée au survol */
 }
 
+/* Animation pour toutes les cartes lors du survol d'une seule */
+.membership-card:hover ~ .membership-card,
+.membership-card:hover {
+    transform: translateY(-10px); /* Légère montée au survol */
+}
+
+
+
+
+
+/* *************************************************** */
 
 /* Boutons de soumission */
 .submit-button {
