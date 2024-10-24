@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jeremie Chamber of Commerce - Discover</title>
+        <meta name="description" content="Discover Page of local businesses and organizations affiliated with the Jeremie Chamber of Commerce.">
+        <meta name="author" content="Guelson Laguerre">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <meta property="og:title" content="Jeremie Chamber of Commerce Discover Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/wdd231/chamber/images/og-image.jpg">
+        <meta property="og:url" content="/wdd231/chamber/discover.html"> 
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="scripts/script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <div class="logo-and-title">
+            <img src="images/logo.png" alt="Chamber Logo" id="logo">
+            <div>
+                <h1>Jeremie</h1>
+                <h3>Chamber of Commerce</h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="">Home</a></li>
+                <li><a href="directory.html" class="">Directory</a></li>
+                <li><a href="join.html" class="">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle">☰</button>
+    </header>
+    <main class="grid-container">
+        <aside class="sidebar">
+            <div id="last-visit-message"></div>
+            <section>
+                <h2>Demographics</h2>
+                <p class="bordered">Demographic data about the local population. 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ratione ab fuga architecto pariatur, repellendus quia, sed 
+                    suscipit quam eaque cum fugit. Ratione voluptatum nisi, ex nostrum 
+                    odio animi quasi repudiandae placeat. Quam nobis quod vero deserunt 
+                    iste suscipit omnis modi.</p>
+            </section>
+            <section>
+                <h2>Attractions</h2>
+                <img src="images/example.jpg" alt="An example attraction" class="sidebar-image">
+                <p>Details about local attractions and places of interest. Lorem ipsum dolor sit, 
+                    amet consectetur adipisicing elit. Consectetur, earum ut laudantium aliquam 
+                    possimus dolorum veritatis blanditiis inventore nesciunt harum?</p>
+            </section>
+            <!-- <section>
+                <h2>Events Calendar</h2>
+                <div id="calendar">
+                    Calendar content
+                </div>
+            </section> -->
+            <!-- <section>
+                <h2>Events Calendar</h2>
+                <div id="calendar"></div>
+            </section> -->
+            <!-- <section>
+                <h2>Events Calendar</h2>
+                <div id="calendar-container">
+                    <div id="calendar-header"></div>
+                    <div id="calendar"></div>
+                </div>
+            </section> -->
+            <section>
+                <h2>Events Calendar</h2>
+                <div id="calendar-container">
+                    <div id="calendar-header">
+                        <button id="prev-month">&laquo; Previous</button>
+                        <span id="month-year"></span>
+                        <button id="next-month">Next &raquo;</button>
+                    </div>
+                    <div id="days-of-week">
+                        <div>Su</div>
+                        <div>Mo</div>
+                        <div>Tu</div>
+                        <div>We</div>
+                        <div>Th</div>
+                        <div>Fr</div>
+                        <div>Sa</div>
+                    </div>
+                    <div id="calendar"></div>
+                </div>
+            </section>                      
+        </aside>
+        <section class="main-content">
+            <h2>Local Photos</h2>
+            <!-- Lazy load images -->
+            <!-- <img data-src="images/img1.jpg" alt="Local photo 1" class="lazy">
+            <img data-src="images/img2.jpg" alt="Local photo 2" class="lazy">
+            <img data-src="images/img3.jpg" alt="Local photo 3" class="lazy">
+            <img data-src="images/img4.jpg" alt="Local photo 4" class="lazy">
+            <img data-src="images/img5.jpg" alt="Local photo 5" class="lazy">
+            <img data-src="images/img6.jpg" alt="Local photo 6" class="lazy"> -->
+
+            <img src="placeholder.jpg" data-src="images/img1.jpg" alt="Local photo 1" class="lazy">
+            <img src="placeholder.jpg" data-src="images/img2.jpg" alt="Local photo 2" class="lazy">
+            <img src="placeholder.jpg" data-src="images/img3.jpg" alt="Local photo 3" class="lazy">
+            <img src="placeholder.jpg" data-src="images/img4.jpg" alt="Local photo 4" class="lazy">
+            <img src="placeholder.jpg" data-src="images/img5.jpg" alt="Local photo 5" class="lazy">
+            <img src="placeholder.jpg" data-src="images/img6.jpg" alt="Local photo 6" class="lazy">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="left">
+                <p>Jeremie Chamber of Commerce</p>
+                <p>15, Cherleas Michel, Calas</p>
+                <p>Grand'Anse, Haiti</p>
+                <p>info@lgg05-chamber.com</p>
+                <p>+509 22883400</p>
+            </div>
+            <div class="center">
+                <nav class="sociallinks">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.png" alt="Facebook">  
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter.png" alt="Twitter">  
+                    </a>
+                    <a href="https://instagram.com">
+                        <img src="images/instagram.png" alt="Instagram">  
+                    </a>
+                </nav>
+            </div>
+            <div class="right">
+                <p>WDD231 Class Project</p>
+                <p>Guelson Laguerre</p>
+                <!-- <p>&copy; 2024 Jeremie Chamber of Commerce</p> -->
+                <p>&copy; <span id="currentyear"></span> Jeremie Chamber of Commerce</p>
+                <p id="lastModified" class="yellowpart"></p>
+                <!-- <p id="copyright-info"></p>
+                <p id="last-modified-info" class="yellowpart"></p> -->
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -352,10 +352,6 @@ input[type="checkbox"] {
     transform: translateY(-10px); /* Légère montée au survol */
 }
 
-
-
-
-
 /* *************************************************** */
 
 /* Boutons de soumission */
@@ -409,4 +405,210 @@ p {
 
 strong {
     color: #333; /* Couleur du texte fort */
+}
+
+
+/* DISCOVER PARTS */
+/* Grid layout for desktop */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar p.bordered {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar img.sidebar-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Main content images lazy load */
+.lazy {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Image hover effect for desktop */
+.grid-container .main-content img:not(.lazy):hover {
+    filter: brightness(0.8);
+    transition: filter 0.3s;
+}
+
+
+
+
+
+
+
+/* Add these styles to your existing CSS file */
+/* Add this to your existing CSS file */
+
+/* Grid layout for desktop */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar p.bordered {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar img.sidebar-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Main content images lazy load */
+.lazy {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Image hover effect for desktop */
+.grid-container .main-content img:not(.lazy):hover {
+    filter: brightness(0.8);
+    transition: filter 0.3s;
+}
+
+
+/* Calendar styling */
+/* #calendar {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+} */
+
+
+
+/* Calendar styling */
+/* #calendar-container {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#calendar-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+#calendar div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} */
+
+
+
+
+/* Calendar styling */
+#calendar-container {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#calendar-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#calendar-header button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calendar-header button:hover {
+    background-color: #0056b3;
+}
+
+#days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+#calendar div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.current-day {
+    background-color: #FFEB3B;
 }
