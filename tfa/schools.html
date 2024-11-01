@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schools - Teaching for All</title>
+    <meta name="description" content="Schools Page of local businesses and organizations affiliated with the Jeremie Chamber of Commerce.">
+    <meta name="author" content="Guelson Laguerre">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Teaching for All">
+    <meta property="og:description" content="Your go-to platform for finding vocational schools and universities.">
+    <meta property="og:image" content="images/some-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
     <link rel="stylesheet" href="styles/tfa.css">
     <script src="scripts/tfa.js" defer></script>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="logo-title">
             <img id="logo" src="images/logo-tfa.jpg" alt="Logo">
             <h1>Teaching for All</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="schools.html" class="active">Schools</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
     
+    <header>
+        <div class="logo-title">
+            <img id="logotfa" src="images/logo-tfa.jpg" alt="Logo">
+            <!-- <h1>Teaching for All</h1> -->
+            <h1>Teaching for All | Jeremie - City</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="schools.html" class="active">Schools</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle">☰</button>
+    </header>
+
     <main>
         <h2>Schools</h2>
         <form id="search-form">
@@ -40,7 +65,27 @@
     </main>
     
     <footer>
-        <!-- Include same footer as index.html -->
+        <div class="footer-content">
+            <div class="left">
+                <p>WDD231 Final Project | Guelson Laguerre</p>
+                <p id="lastModified" class="yellowpart"></p>
+                <p>&copy; 2024 Teaching for All. All rights reserved.</p>
+            </div>
+            <div class="center">
+                <nav class="sociallinks">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.png" alt="Facebook">  
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter.png" alt="Twitter">  
+                    </a>
+                    <a href="https://instagram.com">
+                        <img src="images/instagram.png" alt="Instagram">  
+                    </a>
+                </nav>
+            </div>
+            <div class="right"><a href="privacy.html">Privacy Policy</a></div>
+        </div>
     </footer>
 </body>
 </html>

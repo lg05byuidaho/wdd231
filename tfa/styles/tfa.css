@@ -35,8 +35,9 @@ header {
 }
 
 .logo-title h1,
-.logo-title h4 {
+.logo-title h3 {
     margin: 0; /* Remove default margin from h1 and h3 */
+    padding-top: 50px;
 }
 
 nav {
@@ -258,3 +259,15 @@ main {
     padding: 20px;
 } */
 
+/* Main content images lazy load */
+.lazy {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Image hover effect for desktop */
+.main-content img:hover {
+    filter: brightness(0.8);
+    transition: filter 0.3s;
+}
