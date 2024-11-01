@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schools - Teaching for All</title>
+    <link rel="stylesheet" href="styles/tfa.css">
+    <script src="scripts/tfa.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img id="logo" src="images/logo-tfa.jpg" alt="Logo">
+            <h1>Teaching for All</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schools.html" class="active">Schools</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Schools</h2>
+        <form id="search-form">
+            <input type="text" id="school-name" placeholder="Search for schools...">
+            <button type="submit">Search</button>
+        </form>
+        <ul id="schools-list"></ul>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <!-- Include same footer as index.html -->
+    </footer>
+</body>
+</html>

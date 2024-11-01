@@ -1,0 +1,92 @@
+{
+    "schools": [
+        {
+            "name": "Universite Nouvelle Grand'Anse",
+            "abbreviation": "UNOGA",
+            "country": "Haiti",
+            "address": "Km5, Route Jeremie-Irois, Dekade, HT7110, Jérémie, Grand-Anse",
+            "type": "Universitaire",
+            "phone": "49 01 0022",
+            "fax": "-",
+            "website": "http://www.escdroj.org",
+            "email": "",
+            "description": {
+                "field": "Agriculture and Management",
+                "program": {
+                    "specialty": "Droit",
+                    "duration_years": 4,
+                    "degree_type": "Bachelor"
+                },
+                "mission": "Former des juristes qui vont faire rayonner la justice en Haïti."
+            }
+        },
+        {
+            "name": "Faculté des Sciences Infirmières Notre-Dame du Perpétuel Secours",
+            "abbreviation": "FSINDPS",
+            "country": "Haiti",
+            "description": "La Faculté des Sciences Infirmières Notre-Dame du Perpétuel Secours est une opportunité pour les jeunes du diocèse de Jérémie. Les étudiants de 3e année passent de la pratique (hôpital) à la théorie (examen).",
+            "address": "Non spécifié",
+            "type": "Universitaire",
+            "phone": "Non spécifié",
+            "fax": "-",
+            "website": "Non spécifié",
+            "email": "Non spécifié"
+        },
+        {
+            "name": "Ecole Superieure Catholique de Droit de Jérémie",
+            "abbreviation": "ESCDROJ",
+            "country": "Haiti",
+            "address": "Brouette, Jeremie, Grand-Anse",
+            "type": "Universitaire",
+            "phone": "2284 6816",
+            "fax": "-",
+            "website": "http://www.escdroj.org",
+            "email": "",
+            "description": {
+                "field": "Droit",
+                "program": {
+                    "specialty": "Droit",
+                    "duration_years": 4,
+                    "degree_type": "Bachelor"
+                },
+                "mission": "Former des juristes qui vont faire rayonner la justice en Haïti."
+            }
+        },
+        {
+            "name": "Saint Francis School of Technology",
+            "abbreviation": "SFST",
+            "country": "Haiti",
+            "description": "École technique d'informatique à Jérémie, soutenue par Tek4Kids.",
+            "address": "13, ave Emile Roumer, Bordes, Jeremie, Haiti, Grand-Anse",
+            "type": "Ecole Technique",
+            "phone": "34 15 7204",
+            "fax": "-",
+            "website": "http://sfst.ht",
+            "email": "sfstjeremie@gmail.com"
+        },
+        {
+            "name": "Ecole Professionnelle Jérémie",
+            "abbreviation": "EPJ",
+            "country": "Haiti",
+            "description": "Établissement d'enseignement supérieur à Jérémie.",
+            "address": "MV2H+GV2, Jérémie",
+            "type": "Ecole Technique",
+            "phone": "28 16 1918",
+            "fax": "-",
+            "website": "Non spécifié",
+            "email": "Non spécifié"
+        },
+        {
+            "name": "Up to Date English School",
+            "description": "Une des meilleures écoles à Jérémie offrant un enseignement en anglais américain et britannique.",
+            "address": "Non spécifié",
+            "phone": "Non spécifié",
+            "email": "Non spécifié",
+            "website": "Non spécifié",
+            "rating": {
+                "average": "Non évalué",
+                "reviews": 0
+            }
+        }
+    ]
+}

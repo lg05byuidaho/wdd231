@@ -1,0 +1,260 @@
+/* CSS Styles for Teaching for All */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+} */
+
+/* HEADER PARTS */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFD700;
+    color: #6C757D;
+}
+
+.logo-title {
+    display: flex;
+    align-items: flex-start; /* Align logo and title at the top */
+}
+
+#logotfa {
+    max-width: 120px; /* Adjust the size of the logo */
+    margin-right: 15px; /* Spacing between the logo and the title */
+}
+
+.logo-title h1,
+.logo-title h4 {
+    margin: 0; /* Remove default margin from h1 and h3 */
+}
+
+nav {
+    margin-left: auto; /* Push the nav to the right */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    display: flex; /* Display list items in a row */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin-left: 20px; /* Spacing between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #6C757D; /* Text color */
+    font-weight: bold; /* Make text bold */
+}
+
+nav a {
+    display: block;
+    color: #6C757D;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: overline; /* Underline on hover */
+    color: #6C757D; /* Color on hover */
+}
+
+nav ul li a.active {
+    color: #6C757D; /* Changez la couleur pour indiquer l'élément actif */
+    font-weight: bold; /* Met en gras l'élément actif */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* FOOTER PART */
+footer {
+    background-color: #FFD700;
+    color: #6C757D;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center; /* Center the icons */
+}
+
+.sociallinks img {
+    width: 35px; /* Adjust icon size */
+    margin: 0 10px;
+}
+
+
+
+/* HOME PART */
+/* .hero {
+    position: relative;
+}
+
+.responsive-hero {
+    width: 100%;
+    height: auto;
+} */
+
+/* HERO SECTION STYLES */
+.hero {
+    position: relative;
+    overflow: hidden; /* Prevents content from overflowing */
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    text-align: center; /* Center text */
+    color: white; /* Text color */
+}
+
+.responsive-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the section */
+    position: absolute; /* Allows text to overlay */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: 1; /* Keeps the image behind the text */
+}
+
+.hero-text {
+    position: relative; /* Allows positioning of text over image */
+    z-index: 2; /* Ensures text appears above the image */
+    padding: 20px; /* Padding around text */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.hero-text h2 {
+    font-size: 2.5rem; /* Adjust font size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.hero-text p {
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.btn {
+    background-color: #FFD700; /* Button background color */
+    color: #333; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #ffc107; /* Change color on hover */
+}
+
+
+/* MAIN CONTENT */
+#university-list {
+    margin-top: 20px;
+}
+
+.school-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+
+
+/* Additional styles for modals, forms, etc. */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+} */
+
+/* .btn {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffc107;
+}
+
+main {
+    padding: 20px;
+} */
+

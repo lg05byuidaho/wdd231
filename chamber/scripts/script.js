@@ -128,32 +128,6 @@ async function fetchWeather() {
     }
 }
 
-// function displayWeather(data) {
-//     const temperature = Math.round(data.main.temp);
-//     const weatherDescription = data.weather.map(w => w.description.charAt(0).toUpperCase() + w.description.slice(1)).join(', ');
-//     const humidity = data.main.humidity;
-//     const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
-//     const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
-
-//     // Ajouter l'icône météo
-//     const weatherImage = document.getElementById('weather-image');
-//     weatherImage.src = 'images/weather-image.png'; // Chemin de l'icône
-//     weatherImage.alt = weatherDescription;
-
-//     document.getElementById('weather-data').innerHTML = `
-//         <div style="display: flex; align-items: center;">
-//             <img id="weather-image" src="images/weather-image.png" alt="Weather Icon" style="max-width: 50px; margin-right: 10px;">
-//             <div>
-//                 Temperature:<strong>${temperature}°F</strong><br>
-//                 Description: ${weatherDescription}<br>
-//                 Humidity: ${humidity}%<br>
-//                 Sunrise: ${sunrise}<br>
-//                 Sunset: ${sunset}
-//             </div>
-//         </div>
-//     `;
-// }
-
 function displayWeather(data) {
     const temperature = Math.round(data.main.temp);
     const weatherDescription = data.weather.map(w => w.description.charAt(0).toUpperCase() + w.description.slice(1)).join(', ');
@@ -178,31 +152,6 @@ function displayWeather(data) {
         Sunset: ${sunset}
     `;
 }
-
-
-// function displayWeather(data) {
-//     const temperature = Math.round(data.main.temp);
-//     const weatherDescription = data.weather.map(w => w.description.charAt(0).toUpperCase() + w.description.slice(1)).join(', ');
-//     const humidity = data.main.humidity;
-//     const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
-//     const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
-
-//     // On s'assure que l'icône est insérée correctement
-//     const weatherImage = 'images/weather-image.png'; // Chemin de l'icône
-
-//     document.getElementById('weather-data').innerHTML = `
-//         <div style="display: flex; align-items: center;">
-//             <img src="${weatherImage}" alt="${weatherDescription}" style="max-width: 50px; margin-right: 10px;">
-//             <div>
-//                 <strong>Temperature:</strong> <strong>${temperature}°F</strong><br>
-//                 <strong>Description:</strong> ${weatherDescription}<br>
-//                 <strong>Humidity:</strong> ${humidity}%<br>
-//                 <strong>Sunrise:</strong> ${sunrise}<br>
-//                 <strong>Sunset:</strong> ${sunset}
-//             </div>
-//         </div>
-//     `;
-// }
 
 
 
@@ -326,6 +275,56 @@ function displayForecast(data) {
 // fetchForecast();
 // fetchMembers();
 // ----------------------------------------------------------------------------------
+
+// function displayWeather(data) {
+//     const temperature = Math.round(data.main.temp);
+//     const weatherDescription = data.weather.map(w => w.description.charAt(0).toUpperCase() + w.description.slice(1)).join(', ');
+//     const humidity = data.main.humidity;
+//     const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
+//     const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+
+//     // Ajouter l'icône météo
+//     const weatherImage = document.getElementById('weather-image');
+//     weatherImage.src = 'images/weather-image.png'; // Chemin de l'icône
+//     weatherImage.alt = weatherDescription;
+
+//     document.getElementById('weather-data').innerHTML = `
+//         <div style="display: flex; align-items: center;">
+//             <img id="weather-image" src="images/weather-image.png" alt="Weather Icon" style="max-width: 50px; margin-right: 10px;">
+//             <div>
+//                 Temperature:<strong>${temperature}°F</strong><br>
+//                 Description: ${weatherDescription}<br>
+//                 Humidity: ${humidity}%<br>
+//                 Sunrise: ${sunrise}<br>
+//                 Sunset: ${sunset}
+//             </div>
+//         </div>
+//     `;
+// }
+
+// function displayWeather(data) {
+//     const temperature = Math.round(data.main.temp);
+//     const weatherDescription = data.weather.map(w => w.description.charAt(0).toUpperCase() + w.description.slice(1)).join(', ');
+//     const humidity = data.main.humidity;
+//     const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
+//     const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+
+//     // On s'assure que l'icône est insérée correctement
+//     const weatherImage = 'images/weather-image.png'; // Chemin de l'icône
+
+//     document.getElementById('weather-data').innerHTML = `
+//         <div style="display: flex; align-items: center;">
+//             <img src="${weatherImage}" alt="${weatherDescription}" style="max-width: 50px; margin-right: 10px;">
+//             <div>
+//                 <strong>Temperature:</strong> <strong>${temperature}°F</strong><br>
+//                 <strong>Description:</strong> ${weatherDescription}<br>
+//                 <strong>Humidity:</strong> ${humidity}%<br>
+//                 <strong>Sunrise:</strong> ${sunrise}<br>
+//                 <strong>Sunset:</strong> ${sunset}
+//             </div>
+//         </div>
+//     `;
+// }
 
 
 // -------Member Card-------
