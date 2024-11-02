@@ -1,27 +1,65 @@
 // tfa.js
-document.addEventListener("DOMContentLoaded", function() {
-    const lastModified = document.lastModified;
-    document.getElementById("lastModified").innerText = `Last Modified: ${lastModified}`;
-});
-
 
 document.addEventListener("DOMContentLoaded", function() {
-    const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('nav');
+    // Display last modified date
+    const lastModifiedElement = document.getElementById("lastModified");
+    if (lastModifiedElement) {
+        lastModifiedElement.innerText = `Last Modified: ${document.lastModified}`;
+    }
 
     // Toggle navigation on mobile
-    navToggle.addEventListener('click', function() {
-        nav.classList.toggle('active');
-    });
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('nav');
+    
+    if (navToggle && nav) {
+        navToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+    }
 
-//     // Display last modified date
-//     const lastModified = document.getElementById('lastModified');
-//     if (lastModified) {
-//         lastModified.textContent = `Last Modified: ${document.lastModified}`;
-//     }
-// });
+    // Fetch data from JSON file and render the schools
+    fetch('schools.json')
+        .then(response => response.json())
+        .then(data => renderSchools(data))
+        .catch(error => console.error('Error fetching the JSON data:', error));
 
+    // Close modal functionality
+    const closeButton = document.querySelector('.close-button');
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            document.getElementById('modal').style.display = 'none';
+        });
+    }
 
+    // Form submission event listener
+    const searchForm = document.getElementById('search-form');
+    if (searchForm) {
+        searchForm.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const query = document.getElementById('school-name').value;
+            await fetchSchools(query);
+        });
+    }
+
+    // Lazy loading images
+    let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+    if ("IntersectionObserver" in window) {
+        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    let lazyImage = entry.target;
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImage.classList.remove("lazy");
+                    lazyImageObserver.unobserve(lazyImage);
+                }
+            });
+        });
+
+        lazyImages.forEach(function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+        });
+    }
+});
 
 // Function to render the schools
 function renderSchools(schoolsData) {
@@ -44,18 +82,6 @@ function renderSchools(schoolsData) {
         universityList.appendChild(schoolItem);
     });
 }
-
-// Fetch data from JSON file and render the schools
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('schools.json')
-        .then(response => response.json())
-        .then(data => renderSchools(data))
-        .catch(error => console.error('Error fetching the JSON data:', error));
-});
-
-
-
-
 
 // Function to fetch school data and display it
 async function fetchSchools(query) {
@@ -87,41 +113,3 @@ function showModal(school) {
     document.getElementById('modal-description').textContent = school.description;
     document.getElementById('modal').style.display = 'block';
 }
-
-// Close modal functionality
-document.querySelector('.close-button').addEventListener('click', () => {
-    document.getElementById('modal').style.display = 'none';
-});
-
-// Form submission event listener
-document.getElementById('search-form').addEventListener('submit', async function(event) {
-    event.preventDefault();
-    const query = document.getElementById('school-name').value;
-    await fetchSchools(query);
-});
-
-// Call other necessary functions here (e.g., updateLastModified)
-
-
-// About lazy
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-
-    if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    let lazyImage = entry.target;
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.classList.remove("lazy");
-                    lazyImageObserver.unobserve(lazyImage);
-                }
-            });
-        });
-
-        lazyImages.forEach(function(lazyImage) {
-            lazyImageObserver.observe(lazyImage);
-        });
-    }
